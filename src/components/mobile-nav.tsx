@@ -1,0 +1,62 @@
+import { useState } from 'react';
+import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import Logo from './logo';
+
+type NavLink = {
+  href: string;
+  label: string;
+};
+
+type MobileNavProps = {
+  navLinks: NavLink[];
+};
+
+export default function MobileNav({ navLinks }: MobileNavProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="icon">
+          <Menu className="h-6 w-6" />
+          <span className="sr-only">Open navigation menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="right" className="w-full max-w-sm">
+        <div className="flex h-full flex-col">
+          <div className="flex items-center justify-between border-b pb-4">
+            <Logo />
+            <SheetClose asChild>
+                <Button variant="ghost" size="icon">
+                    <X className="h-6 w-6" />
+                    <span className="sr-only">Close navigation menu</span>
+                </Button>
+            </SheetClose>
+          </div>
+          <nav className="mt-8 flex flex-1 flex-col gap-4">
+            {navLinks.map((link) => (
+              <SheetClose asChild key={link.href}>
+                <Link
+                  href={link.href}
+                  className="rounded-md p-2 text-lg font-medium transition-colors hover:bg-muted"
+                >
+                  {link.label}
+                </Link>
+              </SheetClose>
+            ))}
+          </nav>
+          <div className="mt-auto border-t pt-4">
+            <SheetClose asChild>
+              <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                <Link href="/appointments">Book Appointment</Link>
+              </Button>
+            </SheetClose>
+          </div>
+        </div>
+      </SheetContent>
+    </Sheet>
+  );
+}
