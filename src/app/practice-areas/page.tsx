@@ -1,44 +1,55 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Gavel, Landmark, Building2, Briefcase, Scale, Shield } from 'lucide-react';
-import Image from 'next/image';
+import { Gavel, Landmark, Building2, Briefcase, Scale, Shield, Users, Banknote } from 'lucide-react';
 
 export default function PracticeAreasPage() {
   const practiceAreas = [
     {
       icon: <Gavel className="h-10 w-10 text-primary" />,
-      title: 'Core Litigation',
-      description: 'We provide robust representation in civil, criminal, and commercial disputes before various courts and tribunals. Our approach is strategic, focusing on meticulous preparation and assertive advocacy to protect our clients\' interests.',
-      subareas: ['Civil Suits', 'Criminal Trials', 'Commercial Disputes', 'Property Law']
+      title: 'Civil Law',
+      description: 'Handling a wide range of civil disputes including property, contracts, and torts. We focus on resolving conflicts efficiently, whether through negotiation, mediation, or courtroom litigation.',
+      subareas: ['Property Disputes', 'Contract Law', 'Torts and Damages', 'Injunctions']
+    },
+    {
+      icon: <Shield className="h-10 w-10 text-primary" />,
+      title: 'Criminal Law',
+      description: 'Providing robust defense for individuals facing criminal charges. Our expertise covers everything from bail applications to trials and appeals, ensuring your rights are protected at every stage.',
+      subareas: ['Bail Applications', 'Criminal Trials', 'Appeals and Revisions', 'White-Collar Crimes']
+    },
+    {
+      icon: <Briefcase className="h-10 w-10 text-primary" />,
+      title: 'Corporate & Commercial Law',
+      description: 'Offering comprehensive legal services for businesses, including contract drafting, corporate governance, and dispute resolution, to support your business objectives.',
+      subareas: ['Contract Law', 'Company Incorporation', 'Mergers & Acquisitions', 'Regulatory Compliance']
+    },
+    {
+        icon: <Users className="h-10 w-10 text-primary" />,
+        title: 'Family Law',
+        description: 'Handling sensitive family matters with compassion and professionalism. We assist with divorce, child custody, maintenance, and property settlements.',
+        subareas: ['Divorce & Separation', 'Child Custody', 'Alimony & Maintenance', 'Domestic Violence']
     },
     {
       icon: <Landmark className="h-10 w-10 text-primary" />,
       title: 'Supreme Court of India',
-      description: 'Our firm possesses specialized expertise in handling matters before the Apex Court, including Special Leave Petitions (SLPs), writ petitions, transfer petitions, and appeals. We understand the nuances of Supreme Court practice and procedure.',
+      description: 'Specialized expertise in handling matters before the Apex Court, including Special Leave Petitions (SLPs), writ petitions, transfer petitions, and appeals.',
       subareas: ['Special Leave Petitions', 'Writ Petitions', 'Public Interest Litigation', 'Constitutional Law']
     },
     {
       icon: <Building2 className="h-10 w-10 text-primary" />,
       title: 'High Court of Punjab & Haryana',
-      description: 'With extensive experience at the High Court, we manage a wide array of cases, from writ petitions challenging administrative actions to civil and criminal appeals. We have a deep understanding of the local jurisdiction.',
+      description: 'Extensive experience at the High Court, managing cases from writ petitions challenging administrative actions to civil and criminal appeals.',
       subareas: ['Writ Jurisprudence', 'Civil & Criminal Appeals', 'Company Petitions', 'Service Matters']
-    },
-    {
-      icon: <Briefcase className="h-10 w-10 text-primary" />,
-      title: 'Corporate & Commercial Law',
-      description: 'We offer comprehensive legal services for businesses, including contract drafting and negotiation, corporate governance, compliance, and dispute resolution. Our goal is to provide practical legal solutions that support your business objectives.',
-      subareas: ['Contract Law', 'Company Incorporation', 'Mergers & Acquisitions', 'Regulatory Compliance']
     },
     {
       icon: <Scale className="h-10 w-10 text-primary" />,
       title: 'Arbitration & Mediation',
-      description: 'We are skilled in alternative dispute resolution (ADR) mechanisms, representing clients in domestic and international arbitrations and mediations. We aim for efficient and effective resolution of disputes outside of traditional courtrooms.',
+      description: 'Skilled in alternative dispute resolution (ADR), representing clients in arbitrations and mediations for efficient dispute resolution outside of traditional courts.',
       subareas: ['Domestic Arbitration', 'Commercial Mediation', 'Enforcement of Awards', 'Conciliation']
     },
     {
-      icon: <Shield className="h-10 w-10 text-primary" />,
-      title: 'Family Law',
-      description: 'Handling sensitive family matters with compassion and professionalism. We assist clients with divorce proceedings, child custody, maintenance, and property settlements, always striving for amicable solutions where possible.',
-      subareas: ['Divorce & Separation', 'Child Custody', 'Alimony & Maintenance', 'Domestic Violence']
+      icon: <Banknote className="h-10 w-10 text-primary" />,
+      title: 'Banking & Finance',
+      description: 'Advising on financial regulations, loan agreements, and representing clients in matters related to the Securitisation Act (SARFAESI) and debt recovery tribunals.',
+      subareas: ['SARFAESI Act', 'Debt Recovery Tribunal (DRT)', 'Loan Agreements', 'Financial Regulation']
     },
   ];
 

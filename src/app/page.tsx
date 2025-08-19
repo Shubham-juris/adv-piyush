@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Gavel, Landmark, Building2, Quote, CheckCircle } from 'lucide-react';
+import { Gavel, Landmark, Building2, Quote, CheckCircle, Award, TrendingUp, Users } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { caseStudies } from '@/lib/data';
@@ -23,6 +23,42 @@ export default function Home() {
       description: 'Extensive experience in writ petitions, appeals, and original side matters.',
     },
   ];
+
+  const whyChooseUs = [
+    {
+      icon: <Award className="h-10 w-10 text-primary" />,
+      title: 'Proven Experience',
+      description: 'With a rich history of handling complex cases, our firm brings a wealth of knowledge and strategic insight to every legal challenge.',
+    },
+    {
+      icon: <TrendingUp className="h-10 w-10 text-primary" />,
+      title: 'High Success Rate',
+      description: 'Our diligent preparation and formidable courtroom presence have resulted in a consistent track record of favorable outcomes for our clients.',
+    },
+    {
+      icon: <Users className="h-10 w-10 text-primary" />,
+      title: 'Client Trust',
+      description: 'We are committed to building long-term relationships based on transparency, communication, and a deep-seated commitment to your best interests.',
+    },
+  ];
+
+  const testimonials = [
+    {
+      quote: "Piyush Jain & Associates handled my case with utmost professionalism and dedication. Their strategic approach was brilliant, leading to a successful outcome I hadn't thought possible.",
+      name: "Rajesh Kumar",
+      company: "Corporate Client"
+    },
+    {
+      quote: "Navigating the legal system was daunting, but their team provided clear guidance and constant support. I felt confident and well-represented throughout the entire process.",
+      name: "Anita Sharma",
+      company: "Civil Litigation Client"
+    },
+    {
+      quote: "Exceptional legal minds. Their attention to detail and commitment to my case were truly remarkable. I highly recommend their services to anyone seeking expert legal counsel.",
+      name: "Vikram Singh",
+      company: "Commercial Dispute Client"
+    },
+  ]
 
   return (
     <div className="flex flex-col">
@@ -80,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Practice Areas */}
-      <section id="practice-areas" className="bg-white py-16 lg:py-24">
+      <section id="practice-areas" className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold text-primary">Our Practice Areas</h2>
@@ -90,7 +126,7 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {practiceAreas.map((area) => (
-              <Card key={area.title} className="transform-gpu transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+              <Card key={area.title} className="transform-gpu transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl bg-background">
                 <CardHeader className="items-center text-center">
                   {area.icon}
                   <CardTitle className="mt-4 font-headline">{area.title}</CardTitle>
@@ -109,8 +145,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Choose Us */}
+      <section id="why-choose-us" className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="text-center">
+            <h2 className="font-headline text-3xl font-bold text-primary">Why Choose Us?</h2>
+            <p className="mt-2 text-lg text-muted-foreground">
+              Decades of experience, a history of success.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {whyChooseUs.map((reason) => (
+              <div key={reason.title} className="flex flex-col items-center text-center">
+                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
+                  {reason.icon}
+                </div>
+                <h3 className="mt-6 font-headline text-xl font-bold">{reason.title}</h3>
+                <p className="mt-2 text-muted-foreground">{reason.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Featured Case Study */}
-      <section className="py-16 lg:py-24">
+      <section className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold text-primary">Proven Track Record</h2>
@@ -118,7 +177,7 @@ export default function Home() {
               Delivering results for our clients.
             </p>
           </div>
-          <Card className="mt-12 overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+          <Card className="mt-12 overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4 bg-background">
             <div className="relative h-64 w-full lg:h-full">
               <Image
                 src={caseStudies[0].image}
@@ -146,6 +205,33 @@ export default function Home() {
           </Card>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="text-center">
+            <h2 className="font-headline text-3xl font-bold text-primary">What Our Clients Say</h2>
+            <p className="mt-2 text-lg text-muted-foreground">
+              Real stories from those we have had the privilege to represent.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="flex flex-col justify-between">
+                <CardContent className="pt-6">
+                  <Quote className="h-8 w-8 text-primary/20" />
+                  <p className="mt-4 text-muted-foreground italic">"{testimonial.quote}"</p>
+                </CardContent>
+                <CardHeader>
+                  <div className="font-semibold">{testimonial.name}</div>
+                  <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* CTA Section */}
       <section className="bg-primary py-16 lg:py-20">
