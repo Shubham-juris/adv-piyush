@@ -74,7 +74,7 @@ export default function AppointmentForm() {
                                 <FormItem>
                                 <FormLabel>Full Name</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="John Doe" {...field} />
+                                    <Input placeholder="" {...field} />
                                 </FormControl>
                                 <FormMessage />
                                 </FormItem>
@@ -88,7 +88,7 @@ export default function AppointmentForm() {
                                     <FormItem>
                                     <FormLabel>Email Address</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="john.doe@example.com" {...field} />
+                                        <Input placeholder="" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                     </FormItem>
@@ -101,7 +101,7 @@ export default function AppointmentForm() {
                                     <FormItem>
                                     <FormLabel>Phone Number</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="+91 123 456 7890" {...field} />
+                                        <Input placeholder="" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                     </FormItem>
