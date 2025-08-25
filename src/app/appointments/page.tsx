@@ -26,14 +26,14 @@ export default function AppointmentsPage() {
                                 <Phone className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                                 <div>
                                     <h3 className="font-semibold">Phone</h3>
-                                    <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">+91 123 456 7890</a>
+                                    <a href="tel:01605013008" className="text-muted-foreground hover:text-primary transition-colors">01605013008</a>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
                                 <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                                 <div>
                                     <h3 className="font-semibold">Email</h3>
-                                    <a href="mailto:contact@pjainassociates.com" className="text-muted-foreground hover:text-primary transition-colors">contact@pjainassociates.com</a>
+                                    <a href="mailto:advpiyushjain1995@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">advpiyushjain1995@gmail.com</a>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
