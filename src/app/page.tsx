@@ -88,8 +88,18 @@ export default function Home() {
       {/* About Us Snippet */}
       <section id="about" className="py-16 lg:py-24">
         <div className="container mx-auto max-w-7xl px-4">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div>
+          <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+            <div className="md:order-2">
+               <Image
+                src="https://placehold.co/600x400"
+                alt="Modern office interior"
+                width={600}
+                height={400}
+                className="rounded-lg object-cover shadow-xl"
+                data-ai-hint="modern office"
+              />
+            </div>
+            <div className="md:order-1">
               <h2 className="font-headline text-3xl font-bold text-primary">About Our Firm</h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Founded on the principles of integrity, diligence, and justice, Advocate Piyush Jain & Associates has established itself as a leading law firm. We are committed to providing our clients with strategic, effective, and personalized legal solutions.
@@ -100,16 +110,6 @@ export default function Home() {
               <Button asChild variant="link" className="mt-4 p-0 text-primary">
                 <Link href="/about">Learn More About Us &rarr;</Link>
               </Button>
-            </div>
-            <div className="rounded-lg">
-               <Image
-                src="https://placehold.co/600x400"
-                alt="Modern office interior"
-                width={600}
-                height={400}
-                className="rounded-lg object-cover shadow-xl"
-                data-ai-hint="modern office"
-              />
             </div>
           </div>
         </div>
