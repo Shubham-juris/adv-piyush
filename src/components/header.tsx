@@ -22,7 +22,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <Logo />
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -38,12 +38,12 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/appointments">Book Appointment</Link>
           </Button>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <MobileNav navLinks={navLinks} />
         </div>
       </div>
