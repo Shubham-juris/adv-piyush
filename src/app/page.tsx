@@ -42,24 +42,6 @@ export default function Home() {
     },
   ];
 
-  const testimonials = [
-    {
-      quote: "Piyush Jain & Associates handled my case with utmost professionalism and dedication. Their strategic approach was brilliant, leading to a successful outcome I hadn't thought possible.",
-      name: "Rajesh Kumar",
-      company: "Corporate Client"
-    },
-    {
-      quote: "Navigating the legal system was daunting, but their team provided clear guidance and constant support. I felt confident and well-represented throughout the entire process.",
-      name: "Anita Sharma",
-      company: "Civil Litigation Client"
-    },
-    {
-      quote: "Exceptional legal minds. Their attention to detail and commitment to my case were truly remarkable. I highly recommend their services to anyone seeking expert legal counsel.",
-      name: "Vikram Singh",
-      company: "Commercial Dispute Client"
-    },
-  ]
-
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -205,33 +187,6 @@ export default function Home() {
           </Card>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold text-primary">What Our Clients Say</h2>
-            <p className="mt-2 text-lg text-muted-foreground">
-              Real stories from those we have had the privilege to represent.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="flex flex-col justify-between">
-                <CardContent className="pt-6">
-                  <Quote className="h-8 w-8 text-primary/20" />
-                  <p className="mt-4 text-muted-foreground italic">"{testimonial.quote}"</p>
-                </CardContent>
-                <CardHeader>
-                  <div className="font-semibold">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.company}</div>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
 
       {/* CTA Section */}
       <section className="bg-primary py-16 lg:py-20">
