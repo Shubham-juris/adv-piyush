@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import Logo from './logo';
+import { cn } from '@/lib/utils';
 
 type NavLink = {
   href: string;
@@ -16,6 +18,7 @@ type MobileNavProps = {
 
 export default function MobileNav({ navLinks }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -41,7 +44,10 @@ export default function MobileNav({ navLinks }: MobileNavProps) {
               <SheetClose asChild key={link.href}>
                 <Link
                   href={link.href}
-                  className="rounded-md p-2 text-lg font-medium transition-colors hover:bg-muted"
+                  className={cn(
+                    'rounded-md p-2 text-lg font-medium transition-colors hover:bg-muted',
+                    pathname === link.href ? 'bg-muted text-primary' : ''
+                  )}
                 >
                   {link.label}
                 </Link>
