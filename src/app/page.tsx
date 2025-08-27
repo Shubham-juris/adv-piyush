@@ -4,6 +4,7 @@ import { Gavel, Landmark, Building2, Quote, CheckCircle, Award, TrendingUp, User
 import Image from 'next/image';
 import Link from 'next/link';
 import { caseStudies } from '@/lib/data';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function Home() {
   const practiceAreas = [
@@ -40,6 +41,25 @@ export default function Home() {
       title: 'Client Trust',
       description: 'We are committed to building long-term relationships based on transparency, communication, and a deep-seated commitment to your best interests.',
     },
+  ];
+
+  const faqs = [
+    {
+      question: "How do I schedule a consultation?",
+      answer: "You can schedule a consultation by visiting our 'Appointments' page and filling out the request form. Alternatively, you can call our office directly at the number provided on the contact page. We will get back to you promptly to confirm a date and time."
+    },
+    {
+      question: "What types of cases does your firm handle?",
+      answer: "We handle a wide range of legal matters, specializing in core litigation (civil, criminal, commercial), cases in the Supreme Court of India, and the High Court of Punjab & Haryana. Please visit our 'Practice Areas' page for a comprehensive list of our expertise."
+    },
+    {
+      question: "What should I bring to my first meeting?",
+      answer: "For your initial consultation, please bring all documents relevant to your case. This may include contracts, correspondence, police reports, court notices, or any other paperwork that can help us understand your situation. A written summary of events can also be very helpful."
+    },
+    {
+      question: "How are legal fees structured?",
+      answer: "Our fee structure varies depending on the complexity and nature of the case. We offer various arrangements, including flat fees, hourly rates, and retainers. We are committed to transparency and will discuss all fee-related matters with you upfront during your initial consultation."
+    }
   ];
 
   return (
@@ -195,6 +215,28 @@ export default function Home() {
               </Button>
             </div>
           </Card>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-4xl px-4">
+          <div className="text-center">
+            <h2 className="font-headline text-3xl font-bold text-primary">Frequently Asked Questions</h2>
+            <p className="mt-2 text-lg text-muted-foreground">
+              Answers to common inquiries about our services.
+            </p>
+          </div>
+          <Accordion type="single" collapsible className="mt-12 w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger className="text-left font-semibold">{faq.question}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 
