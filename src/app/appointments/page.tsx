@@ -39,11 +39,11 @@ export default function AppointmentsPage() {
                             <div className="flex items-start gap-4">
                                 <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="font-semibold">Our Chambers</h3>
+                                    <h3 className="font-semibold">Our Address</h3>
                                     <p className="text-muted-foreground">
-                                        Punjab & Haryana High Court, Chandigarh, India
+                                       Sco 27, New Sunny Enclave, 
                                         <br />
-                                        District Courts, Sector 43, Chandigarh, India
+                                       Sector-125, Mohali-140301
                                     </p>
                                 </div>
                             </div>
