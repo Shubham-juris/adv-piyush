@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import Logo from './logo';
@@ -32,12 +32,6 @@ export default function MobileNav({ navLinks }: MobileNavProps) {
         <div className="flex h-full flex-col">
           <div className="flex items-center justify-between border-b pb-4">
             <Logo />
-            <SheetClose asChild>
-                <Button variant="ghost" size="icon">
-                    <X className="h-6 w-6" />
-                    <span className="sr-only">Close navigation menu</span>
-                </Button>
-            </SheetClose>
           </div>
           <nav className="mt-8 flex flex-1 flex-col gap-4">
             {navLinks.map((link) => (
