@@ -5,13 +5,18 @@ import Link from 'next/link';
 import { caseStudies } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
+import AnimatedHeading from '@/components/animated-heading';
 
 export default function CaseStudiesPage() {
   return (
     <>
       <div className="bg-primary/5">
         <div className="container mx-auto max-w-7xl px-4 py-16 text-center">
-          <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">Case Studies</h1>
+          <AnimatedHeading 
+            tag="h1"
+            text="Case Studies"
+            className="font-headline text-4xl font-bold text-primary md:text-5xl justify-center"
+          />
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
             Explore our track record of success. A showcase of our commitment to achieving favorable outcomes for our clients.
           </p>

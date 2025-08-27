@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Check, Scale, Target, Users } from 'lucide-react';
+import AnimatedHeading from '@/components/animated-heading';
 
 export default function AboutPage() {
   const teamMembers = [
@@ -48,7 +49,11 @@ export default function AboutPage() {
     <>
       <div className="bg-primary/5">
         <div className="container mx-auto max-w-7xl px-4 py-16 text-center">
-          <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">About Our Firm</h1>
+          <AnimatedHeading 
+            tag="h1" 
+            text="About Our Firm" 
+            className="font-headline text-4xl font-bold text-primary md:text-5xl justify-center"
+          />
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
             A tradition of excellence, a commitment to justice. Learn about the values, history, and people that define Advocate Piyush Jain & Associates.
           </p>
@@ -59,7 +64,11 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-4">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="font-headline text-3xl font-bold text-primary">Our Mission & Vision</h2>
+              <AnimatedHeading 
+                tag="h2"
+                text="Our Mission & Vision"
+                className="font-headline text-3xl font-bold text-primary"
+              />
               <div className="mt-6 space-y-6 text-muted-foreground">
                  <div className="flex items-start gap-4">
                    <Target className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
@@ -90,7 +99,11 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-20 text-center">
-            <h2 className="font-headline text-3xl font-bold text-primary">Our Core Values</h2>
+            <AnimatedHeading 
+              tag="h2"
+              text="Our Core Values"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
             <div className="mt-12 grid gap-8 md:grid-cols-3">
               {values.map((value) => (
                 <div key={value.title} className="flex flex-col items-center">
@@ -109,7 +122,11 @@ export default function AboutPage() {
       <div className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold text-primary">Meet Our Team</h2>
+            <AnimatedHeading 
+              tag="h2"
+              text="Meet Our Team"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
             <p className="mt-2 text-lg text-muted-foreground">
               Experienced professionals dedicated to your success.
             </p>
@@ -136,7 +153,11 @@ export default function AboutPage() {
 
       <div className="py-16 lg:py-24">
         <div className="container mx-auto max-w-4xl text-center">
-           <h2 className="font-headline text-3xl font-bold text-primary">Let's Discuss Your Legal Needs</h2>
+           <AnimatedHeading 
+              tag="h2"
+              text="Let's Discuss Your Legal Needs"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
            <p className="mt-4 text-lg text-muted-foreground">
              Our team is ready to provide the expert legal guidance you deserve. Reach out to us for a confidential consultation.
            </p>

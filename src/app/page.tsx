@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { caseStudies } from '@/lib/data';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import AnimatedHeading from '@/components/animated-heading';
 
 export default function Home() {
   const practiceAreas = [
@@ -80,9 +81,11 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center">
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-primary md:text-6xl lg:text-7xl">
-            Excellence in Legal Representation
-          </h1>
+          <AnimatedHeading 
+            tag="h1"
+            text="Excellence in Legal Representation"
+            className="font-headline text-4xl font-bold tracking-tight text-primary md:text-6xl lg:text-7xl"
+          />
           <p className="mt-4 max-w-2xl text-lg text-foreground md:text-xl">
             Advocate Piyush Jain & Associates provides expert legal counsel and dedicated advocacy across a wide spectrum of practice areas.
           </p>
@@ -112,7 +115,11 @@ export default function Home() {
               />
             </div>
             <div className="lg:order-1">
-              <h2 className="font-headline text-3xl font-bold text-primary">About Our Firm</h2>
+              <AnimatedHeading 
+                tag="h2"
+                text="About Our Firm"
+                className="font-headline text-3xl font-bold text-primary"
+              />
               <p className="mt-4 text-lg text-muted-foreground">
                 Founded on the principles of integrity, diligence, and justice, Advocate Piyush Jain & Associates has established itself as a leading law firm. We are committed to providing our clients with strategic, effective, and personalized legal solutions.
               </p>
@@ -131,7 +138,11 @@ export default function Home() {
       <section id="practice-areas" className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold text-primary">Our Practice Areas</h2>
+            <AnimatedHeading 
+              tag="h2"
+              text="Our Practice Areas"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
             <p className="mt-2 text-lg text-muted-foreground">
               Specialized expertise to meet your legal needs.
             </p>
@@ -161,7 +172,11 @@ export default function Home() {
       <section id="why-choose-us" className="py-16 lg:py-24">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold text-primary">Why Choose Us?</h2>
+             <AnimatedHeading 
+              tag="h2"
+              text="Why Choose Us?"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
             <p className="mt-2 text-lg text-muted-foreground">
               Decades of experience, a history of success.
             </p>
@@ -184,7 +199,11 @@ export default function Home() {
       <section className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold text-primary">Proven Track Record</h2>
+            <AnimatedHeading 
+              tag="h2"
+              text="Proven Track Record"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
             <p className="mt-2 text-lg text-muted-foreground">
               Delivering results for our clients.
             </p>
@@ -222,7 +241,11 @@ export default function Home() {
       <section id="faq" className="py-16 lg:py-24">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="text-center">
-            <h2 className="font-headline text-3xl font-bold text-primary">Frequently Asked Questions</h2>
+            <AnimatedHeading 
+              tag="h2"
+              text="Frequently Asked Questions"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
             <p className="mt-2 text-lg text-muted-foreground">
               Answers to common inquiries about our services.
             </p>
@@ -243,9 +266,11 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-primary py-16 lg:py-20">
         <div className="container mx-auto max-w-7xl px-4 text-center">
-          <h2 className="font-headline text-3xl font-bold text-primary-foreground">
-            Ready to Discuss Your Case?
-          </h2>
+           <AnimatedHeading 
+              tag="h2"
+              text="Ready to Discuss Your Case?"
+              className="font-headline text-3xl font-bold text-primary-foreground justify-center"
+            />
           <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/80">
             Your legal journey begins with a conversation. Contact us today for a confidential consultation and let us help you navigate your legal challenges with confidence.
           </p>

@@ -1,12 +1,17 @@
 import AppointmentForm from "@/components/appointment-form";
 import { Mail, Phone, MapPin } from "lucide-react";
+import AnimatedHeading from "@/components/animated-heading";
 
 export default function AppointmentsPage() {
     return (
         <>
         <div className="bg-primary/5">
             <div className="container mx-auto max-w-7xl px-4 py-16 text-center">
-            <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">Book an Appointment</h1>
+            <AnimatedHeading 
+                tag="h1" 
+                text="Book an Appointment" 
+                className="font-headline text-4xl font-bold text-primary md:text-5xl justify-center"
+            />
             <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
                 Schedule a confidential consultation with our legal experts. Please fill out the form below or contact us directly.
             </p>
@@ -17,7 +22,11 @@ export default function AppointmentsPage() {
             <div className="container mx-auto max-w-7xl px-4">
                 <div className="grid gap-12 lg:grid-cols-5">
                     <div className="lg:col-span-2">
-                        <h2 className="font-headline text-2xl font-bold text-primary">Contact Information</h2>
+                        <AnimatedHeading 
+                            tag="h2"
+                            text="Contact Information"
+                            className="font-headline text-2xl font-bold text-primary"
+                        />
                         <p className="mt-2 text-muted-foreground">
                             We are available to assist you. You can reach us via phone, email, or by visiting our chambers.
                         </p>

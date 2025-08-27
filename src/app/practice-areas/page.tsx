@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Gavel, Landmark, Building2, Briefcase, Scale, Shield, Users, Banknote } from 'lucide-react';
+import AnimatedHeading from '@/components/animated-heading';
 
 export default function PracticeAreasPage() {
   const practiceAreas = [
@@ -57,7 +58,11 @@ export default function PracticeAreasPage() {
     <>
       <div className="bg-primary/5">
         <div className="container mx-auto max-w-7xl px-4 py-16 text-center">
-          <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">Practice Areas</h1>
+          <AnimatedHeading 
+            tag="h1"
+            text="Practice Areas"
+            className="font-headline text-4xl font-bold text-primary md:text-5xl justify-center"
+          />
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
             Comprehensive legal expertise across a wide spectrum of disciplines to address your most complex challenges.
           </p>

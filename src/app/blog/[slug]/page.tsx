@@ -3,6 +3,7 @@ import { blogPosts } from '@/lib/data';
 import Image from 'next/image';
 import { Calendar, User } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
+import AnimatedHeading from '@/components/animated-heading';
 
 type BlogPostPageProps = {
   params: {
@@ -28,7 +29,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="container mx-auto max-w-4xl px-4">
         <article>
           <header className="mb-8">
-            <h1 className="font-headline text-3xl font-bold text-primary md:text-5xl">{post.title}</h1>
+            <AnimatedHeading 
+              tag="h1" 
+              text={post.title} 
+              className="font-headline text-3xl font-bold text-primary md:text-5xl"
+            />
             <div className="mt-4 flex items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />

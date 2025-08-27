@@ -4,13 +4,18 @@ import { blogPosts } from '@/lib/data';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Calendar, User } from 'lucide-react';
+import AnimatedHeading from '@/components/animated-heading';
 
 export default function BlogPage() {
   return (
     <>
       <div className="bg-primary/5">
         <div className="container mx-auto max-w-7xl px-4 py-16 text-center">
-          <h1 className="font-headline text-4xl font-bold text-primary md:text-5xl">Legal Insights</h1>
+          <AnimatedHeading 
+            tag="h1"
+            text="Legal Insights"
+            className="font-headline text-4xl font-bold text-primary md:text-5xl justify-center"
+          />
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
             Stay informed with our latest articles, analyses, and updates on the ever-changing legal landscape.
           </p>
