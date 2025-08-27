@@ -7,13 +7,13 @@ export default function PracticeAreasPage() {
       icon: <Gavel className="h-10 w-10 text-primary" />,
       title: 'Civil Law',
       description: 'Handling a wide range of civil disputes including property, contracts, and torts. We focus on resolving conflicts efficiently, whether through negotiation, mediation, or courtroom litigation.',
-      subareas: ['Property Disputes', 'Contract Law', 'Torts and Damages', 'Injunctions']
+      subareas: ['Property Disputes', 'Contract Law', 'Motor Vehicle Accident Cases', 'Injunctions']
     },
     {
       icon: <Shield className="h-10 w-10 text-primary" />,
       title: 'Criminal Law',
       description: 'Providing robust defense for individuals facing criminal charges. Our expertise covers everything from bail applications to trials and appeals, ensuring your rights are protected at every stage.',
-      subareas: ['Bail Applications', 'Criminal Trials', 'Appeals and Revisions', 'White-Collar Crimes']
+      subareas: ['Bail Applications', 'Criminal Trials', 'Appeals and Revisions', 'Complaint under Section 138 of NI Act']
     },
     {
       icon: <Briefcase className="h-10 w-10 text-primary" />,

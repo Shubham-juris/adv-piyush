@@ -48,8 +48,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
                 <span className="text-sm text-primary-foreground/80">
-                  Chamber 1: Punjab & Haryana High Court, Chandigarh, India<br/>
-                  Chamber 2: District Courts, Sector 43, Chandigarh, India
+                 SCO 27, NEW SUNNY ENCLAVE, SECTOR-125, MOHALI-140301<br/>
+                <br/>
+                 CHAMBER NO. 572, PATIALA HOUSE COURT, NEW DELHI-110001
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -61,8 +62,8 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
                 <a href="tel:01605013008" className="text-sm text-primary-foreground/80 transition-colors hover:text-white">
-                  01605013008
-                </a>
+                  0160-501-3008
+               </a>
               </li>
             </ul>
           </div>
