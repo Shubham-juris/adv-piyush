@@ -15,7 +15,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "Successfully navigated a complex corporate restructuring case, preserving shareholder value and ensuring company stability through strategic legal maneuvers in the High Court.",
     category: "Corporate Law",
     outcome: "Favorable ruling that set a new precedent for asset protection during mergers.",
-    image: "https://placehold.co/800x600",
+    image: "/images/team.jpg",
     details: "The case involved a multi-national corporation facing hostile takeover bids. Our team devised a defensive strategy that involved complex litigation and negotiation, ultimately leading to a successful restructuring that benefited all stakeholders. The High Court's decision was widely reported and is now a key case study in corporate law programs."
   },
   {
@@ -24,7 +24,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "Achieved a landmark decision in the Supreme Court of India, protecting the intellectual property rights of an innovative tech startup against a major corporation.",
     category: "Intellectual Property",
     outcome: "The Supreme Court reversed the lower court's decision, affirming our client's patent rights.",
-    image: "https://placehold.co/800x600",
+    image: "/images/intellectual.png",
     details: "Our client, a small technology firm, had their core patent infringed upon by a large competitor. After a lengthy battle in lower courts, we took the case to the Supreme Court. Our arguments focused on the novel aspects of the technology and the importance of protecting innovation. The victory secured our client's future and sent a strong message about IP rights in India."
   },
   {
@@ -33,7 +33,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "Represented a construction company in a high-stakes arbitration dispute over a delayed infrastructure project, resulting in a significant award for our client.",
     category: "Arbitration",
     outcome: "Arbitration panel awarded our client full compensation for project delays and cost overruns.",
-    image: "https://placehold.co/800x600",
+    image: "/images/arbitration.jpeg",
     details: "The dispute centered on contractual ambiguities and unforeseen site conditions. We presented a meticulously documented case with expert testimony on construction management and engineering. The panel's decision in our client's favor was unanimous and highlighted the strength of our evidence and legal arguments."
   },
   {
@@ -42,7 +42,7 @@ export const caseStudies: CaseStudy[] = [
     summary: "Filed a successful writ petition in the High Court of Punjab & Haryana, challenging arbitrary administrative action and securing fundamental rights for a community group.",
     category: "Constitutional Law",
     outcome: "The High Court quashed the administrative order and issued directives to protect the petitioners' rights.",
-    image: "https://placehold.co/800x600",
+    image:  "/images/punjab.jpg",
     details: "A local community's access to public resources was unfairly restricted by a governmental decree. We argued that the action was discriminatory and violated constitutional principles of equality. The High Court's swift intervention restored justice and reaffirmed the power of judicial review."
   }
 ];

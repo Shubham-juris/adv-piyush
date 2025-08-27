@@ -8,7 +8,6 @@ import InitialLoader from '@/components/initial-loader';
 
 export const metadata: Metadata = {
   title: 'Advocate Piyush Jain & Associates',
-  description: 'Official Website of Advocate Piyush Jain & Associates. Expert legal services in Core Litigation, Supreme Court of India, and High Court of Punjab & Haryana.',
 };
 
 export default function RootLayout({

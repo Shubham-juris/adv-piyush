@@ -79,7 +79,7 @@ export default function AboutPage() {
             </div>
             <div className="order-1 lg:order-2">
               <Image 
-                src="https://placehold.co/600x450" 
+                src="/images/about.jpg" 
                 alt="Law firm meeting room" 
                 width={600} 
                 height={450}

@@ -45,15 +45,20 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[400px] w-full bg-primary/20">
-        <Image
-          src="https://placehold.co/1920x1080"
-          alt="Law books and gavel"
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 z-0 opacity-20"
-          data-ai-hint="law books"
-        />
+      <section className="relative h-[80vh] min-h-[400px] w-full bg-primary/10">
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 z-0 h-full w-full object-cover opacity-40"
+        >
+          <source src="/images/hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Content */}
         <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-primary md:text-6xl lg:text-7xl">
             Excellence in Legal Representation
@@ -61,11 +66,16 @@ export default function Home() {
           <p className="mt-4 max-w-2xl text-lg text-foreground md:text-xl">
             Advocate Piyush Jain & Associates provides expert legal counsel and dedicated advocacy across a wide spectrum of practice areas.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button
+            asChild
+            size="lg"
+            className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
+          >
             <Link href="/appointments">Book an Appointment</Link>
           </Button>
         </div>
       </section>
+
 
       {/* About Us Snippet */}
       <section id="about" className="py-16 lg:py-24">
@@ -73,7 +83,7 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div className="lg:order-2">
                <Image
-                src="https://placehold.co/600x400"
+                src="/images/miroshni.jpg" 
                 alt="Modern office interior"
                 width={600}
                 height={400}
