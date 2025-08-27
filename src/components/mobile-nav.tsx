@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import Logo from './logo';
 import { cn } from '@/lib/utils';
 
@@ -29,6 +29,9 @@ export default function MobileNav({ navLinks }: MobileNavProps) {
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="w-full max-w-sm">
+        <SheetHeader>
+            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+        </SheetHeader>
         <div className="flex h-full flex-col">
           <div className="flex items-center justify-between border-b pb-4">
             <Logo />
