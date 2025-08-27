@@ -49,15 +49,15 @@ export default function Home() {
       answer: "You can schedule a consultation by visiting our 'Appointments' page and filling out the request form. Alternatively, you can call our office directly at the number provided on the contact page. We will get back to you promptly to confirm a date and time."
     },
     {
-      question: "What types of cases does your firm handle?",
-      answer: "We handle a wide range of legal matters, specializing in core litigation (civil, criminal, commercial), cases in the Supreme Court of India, and the High Court of Punjab & Haryana. Please visit our 'Practice Areas' page for a comprehensive list of our expertise."
+      question: "What types of cases do you specialize in?",
+      answer: "Our firm specializes in a wide range of legal matters, with a focus on core litigation including civil, criminal, and commercial cases. We also have extensive experience in handling matters before the Supreme Court of India and various High Courts. For a detailed list, please visit our 'Practice Areas' page."
     },
     {
-      question: "What should I bring to my first meeting?",
+      question: "What should I bring to my first consultation?",
       answer: "For your initial consultation, please bring all documents relevant to your case. This may include contracts, correspondence, police reports, court notices, or any other paperwork that can help us understand your situation. A written summary of events can also be very helpful."
     },
     {
-      question: "How are legal fees structured?",
+      question: "What is your fee structure?",
       answer: "Our fee structure varies depending on the complexity and nature of the case. We offer various arrangements, including flat fees, hourly rates, and retainers. We are committed to transparency and will discuss all fee-related matters with you upfront during your initial consultation."
     }
   ];
