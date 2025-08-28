@@ -10,16 +10,16 @@ export default function AboutPage() {
       name: 'Adv. Piyush Jain',
       role: 'Founder & Lead Counsel',
       image: 'https://placehold.co/400x400',
-      bio: 'With over 15 years of experience, Piyush Jain is a distinguished litigator known for his sharp legal acumen and unwavering dedication to his clients.'
+      bio: 'A distinguished litigator known for sharp legal acumen and unwavering dedication to clients.'
     },
     {
-      name: 'Jane Doe',
+      name: 'Jane',
       role: 'Senior Associate',
       image: 'https://placehold.co/400x400',
       bio: 'Specializing in corporate law and commercial litigation, Jane brings a wealth of knowledge and strategic insight to the team.'
     },
     {
-      name: 'John Smith',
+      name: 'John ',
       role: 'Associate',
       image: 'https://placehold.co/400x400',
       bio: 'John focuses on criminal law and civil disputes, providing rigorous research and compelling arguments in court.'
