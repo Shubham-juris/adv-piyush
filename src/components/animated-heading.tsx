@@ -1,7 +1,8 @@
 
 "use client";
 
-import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type AnimatedHeadingProps = {
@@ -16,6 +17,16 @@ const AnimatedHeading = ({
   className,
 }: AnimatedHeadingProps) => {
   const words = text.split(" ");
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start("visible");
+    const interval = setInterval(() => {
+      controls.start("hidden").then(() => controls.start("visible"));
+    }, 10000); // 10 seconds
+
+    return () => clearInterval(interval);
+  }, [controls]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -52,8 +63,7 @@ const AnimatedHeading = ({
     <MotionTag
       variants={containerVariants}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
+      animate={controls}
       className={cn("flex flex-wrap", className)}
     >
       {words.map((word, index) => (
