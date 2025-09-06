@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -51,8 +52,8 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-4 py-16 text-center">
           <AnimatedHeading 
             tag="h1" 
-            text="About Our Firm" 
-            className="font-headline text-4xl font-bold text-primary md:text-5xl justify-center"
+            text="ABOUT OUR FIRM" 
+            className="font-headline text-4xl font-bold uppercase text-primary md:text-5xl justify-center"
           />
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
             A tradition of excellence, a commitment to justice. Learn about the values, history, and people that define Advocate Piyush Jain & Associates.
@@ -66,21 +67,21 @@ export default function AboutPage() {
             <div className="order-2 lg:order-1">
               <AnimatedHeading 
                 tag="h2"
-                text="Our Mission & Vision"
-                className="font-headline text-3xl font-bold text-primary"
+                text="OUR MISSION & VISION"
+                className="font-headline text-3xl font-bold uppercase text-primary"
               />
               <div className="mt-6 space-y-6 text-muted-foreground">
                  <div className="flex items-start gap-4">
                    <Target className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                    <div>
-                     <h3 className="text-xl font-bold text-foreground">Our Mission</h3>
+                     <h3 className="text-xl font-bold uppercase text-foreground">Our Mission</h3>
                      <p>To provide exceptional, ethical, and effective legal representation that achieves the best possible outcomes for our clients, while contributing positively to the legal profession and the community.</p>
                    </div>
                  </div>
                  <div className="flex items-start gap-4">
                    <Scale className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                    <div>
-                     <h3 className="text-xl font-bold text-foreground">Our Vision</h3>
+                     <h3 className="text-xl font-bold uppercase text-foreground">Our Vision</h3>
                      <p>To be the most trusted and respected law firm in the region, recognized for our legal expertise, professional integrity, and unwavering commitment to justice for all.</p>
                    </div>
                  </div>
@@ -101,8 +102,8 @@ export default function AboutPage() {
           <div className="mt-20 text-center">
             <AnimatedHeading 
               tag="h2"
-              text="Our Core Values"
-              className="font-headline text-3xl font-bold text-primary justify-center"
+              text="OUR CORE VALUES"
+              className="font-headline text-3xl font-bold uppercase text-primary justify-center"
             />
             <div className="mt-12 grid gap-8 md:grid-cols-3">
               {values.map((value) => (
@@ -110,7 +111,7 @@ export default function AboutPage() {
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                     {value.icon}
                   </div>
-                  <h3 className="mt-4 text-xl font-bold font-headline">{value.title}</h3>
+                  <h3 className="mt-4 text-xl font-bold uppercase font-headline">{value.title}</h3>
                   <p className="mt-2 text-muted-foreground">{value.description}</p>
                 </div>
               ))}
@@ -119,44 +120,12 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="bg-primary/5 py-16 lg:py-24">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="text-center">
-            <AnimatedHeading 
-              tag="h2"
-              text="Meet Our Team"
-              className="font-headline text-3xl font-bold text-primary justify-center"
-            />
-            <p className="mt-2 text-lg text-muted-foreground">
-              Experienced professionals dedicated to your success.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {teamMembers.map((member) => (
-              <div key={member.name} className="flex flex-col items-center text-center">
-                <Image 
-                  src={member.image} 
-                  alt={member.name} 
-                  width={200} 
-                  height={200}
-                  className="rounded-full object-cover shadow-lg"
-                  data-ai-hint="professional headshot"
-                />
-                <h3 className="mt-6 font-headline text-xl font-bold">{member.name}</h3>
-                <p className="font-semibold text-primary">{member.role}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       <div className="py-16 lg:py-24">
         <div className="container mx-auto max-w-4xl text-center">
            <AnimatedHeading 
               tag="h2"
-              text="Let's Discuss Your Legal Needs"
-              className="font-headline text-3xl font-bold text-primary justify-center"
+              text="LET'S DISCUSS YOUR LEGAL NEEDS"
+              className="font-headline text-3xl font-bold uppercase text-primary justify-center"
             />
            <p className="mt-4 text-lg text-muted-foreground">
              Our team is ready to provide the expert legal guidance you deserve. Reach out to us for a confidential consultation.
