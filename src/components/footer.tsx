@@ -7,7 +7,6 @@ export default function Footer() {
     { href: '/about', label: 'About Us' },
     { href: '/practice-areas', label: 'Practice Areas' },
     { href: '/case-studies',label: 'Case Studies' },
-    { href: '/blog', label: 'Blog' },
     { href: '/appointments', label: 'Appointments' },
   ];
   const socialLinks = [
@@ -30,11 +29,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-headline text-lg font-semibold text-accent">Quick Links</h3>
+            <h3 className="font-headline text-lg font-semibold text-accent uppercase">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-primary-foreground/80 transition-colors hover:text-white">
+                  <Link href={link.href} className="text-sm text-primary-foreground/80 transition-colors hover:text-white uppercase">
                     {link.label}
                   </Link>
                 </li>
@@ -43,7 +42,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-headline text-lg font-semibold text-accent">Contact Info</h3>
+            <h3 className="font-headline text-lg font-semibold text-accent uppercase">Contact Info</h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
@@ -69,7 +68,7 @@ export default function Footer() {
           </div>
 
            <div>
-            <h3 className="font-headline text-lg font-semibold text-accent">Follow Us</h3>
+            <h3 className="font-headline text-lg font-semibold text-accent uppercase">Follow Us</h3>
              <div className="mt-4 flex space-x-4">
                {socialLinks.map((social, index) => (
                  <Link key={index} href={social.href} className="text-primary-foreground/80 transition-colors hover:text-white">

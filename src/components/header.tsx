@@ -12,7 +12,6 @@ const navLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/practice-areas', label: 'Practice Areas' },
   { href: '/case-studies', label: 'Case Studies' },
-  { href: '/blog', label: 'Blog' },
 ];
 
 export default function Header() {
@@ -28,7 +27,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                'text-sm font-medium transition-colors hover:text-primary',
+                'text-sm font-medium transition-colors hover:text-primary uppercase',
                 pathname === link.href
                   ? 'text-primary font-bold'
                   : 'text-muted-foreground'
@@ -39,7 +38,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 uppercase">
             <Link href="/appointments">Book Appointment</Link>
           </Button>
         </div>
