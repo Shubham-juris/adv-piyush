@@ -20,14 +20,14 @@ const AnimatedHeading = ({
   const controls = useAnimation();
 
   useEffect(() => {
-    const sequence = async () => {
+    controls.start("visible");
+
+    const interval = setInterval(async () => {
+      await controls.start("hidden");
       await controls.start("visible");
-      setInterval(async () => {
-        await controls.start("hidden");
-        await controls.start("visible");
-      }, 15000); // 15 seconds
-    };
-    sequence();
+    }, 15000); // 15 seconds
+
+    return () => clearInterval(interval);
   }, [controls]);
 
   const containerVariants = {
