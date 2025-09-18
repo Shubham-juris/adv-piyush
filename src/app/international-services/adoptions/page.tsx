@@ -3,9 +3,31 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import AnimatedHeading from '@/components/animated-heading';
-import { Heart, Home, Scale } from 'lucide-react';
+import { Heart, Home, Scale, Shield, Users, Globe } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function InternationalAdoptionsPage() {
+  const processSteps = [
+    { title: "Home Study & Dossier", description: "Comprehensive evaluation and document preparation for submission to the foreign country." },
+    { title: "Child Referral", description: "Accepting a match with a child from the foreign adoption authority." },
+    { title: "Immigration & Visa", description: "Navigating U.S. immigration processes to bring your child home." },
+    { title: "Travel & Court Process", description: "Traveling to the child's country to finalize the adoption in their legal system." },
+    { title: "Post-Adoption Finalization", description: "Finalizing the adoption in U.S. courts and completing post-placement reporting." },
+    { title: "Citizenship", description: "Ensuring your child automatically acquires U.S. citizenship upon entry." }
+  ];
+
+  const ourApproach = [
+    { title: "Compassionate Guidance", description: "We provide empathetic support, understanding the emotional journey of adoption." },
+    { title: "Legal Expertise", description: "Deep knowledge of the Hague Convention and inter-country adoption laws." },
+    { title: "Seamless Coordination", description: "We work with international agencies to ensure a smooth and compliant process." }
+  ];
+
+  const whyChooseUs = [
+    { title: "Experienced Counsel", description: "Our team has extensive experience in successfully handling complex international adoptions." },
+    { title: "Child-Focused", description: "We prioritize the best interests and welfare of the child at every step." },
+    { title: "Proven Success", description: "We have a strong track record of uniting families across borders." }
+  ];
+
   return (
     <>
       <div className="bg-primary/5">
@@ -63,6 +85,78 @@ export default function InternationalAdoptionsPage() {
           </div>
         </div>
       </div>
+
+      {/* Key Aspects Section */}
+      <div className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="text-center">
+            <AnimatedHeading
+              tag="h2"
+              text="Key Aspects of The Adoption Process"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {processSteps.map((item) => (
+              <Card key={item.title} className="bg-primary/5 border-primary/20">
+                <CardHeader>
+                  <CardTitle className="font-headline text-lg text-accent uppercase">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Our Approach Section */}
+      <div className="bg-primary py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4 text-center">
+          <AnimatedHeading
+            tag="h2"
+            text="Our Approach"
+            className="font-headline text-3xl font-bold text-primary-foreground justify-center"
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {ourApproach.map((item) => (
+              <Card key={item.title} className="bg-primary-foreground/10 border-accent/30 text-left">
+                <CardHeader>
+                  <CardTitle className="font-headline text-lg text-accent">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-primary-foreground/80">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4 text-center">
+          <AnimatedHeading
+            tag="h2"
+            text="Why Choose Us?"
+            className="font-headline text-3xl font-bold text-primary justify-center"
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {whyChooseUs.map((item) => (
+              <Card key={item.title} className="bg-primary/5">
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl text-primary">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+      
        <div className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-4xl text-center">
            <AnimatedHeading 

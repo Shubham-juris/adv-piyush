@@ -1,10 +1,33 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import AnimatedHeading from '@/components/animated-heading';
 import { Landmark, FileText, Globe } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function InternationalPropertyPage() {
+  const commonDisputes = [
+    { title: "Ownership Disputes", description: "Conflicts over who legally owns the property or land located in a foreign country." },
+    { title: "Inheritance Issues", description: "Family disputes regarding division of ancestral or inherited property across borders." },
+    { title: "Boundary Conflicts", description: "Disagreements over land boundaries and encroachments involving international properties." },
+    { title: "Landlord-Tenant Disputes", description: "Legal issues related to rental agreements, eviction, or property misuse for foreign landlords/tenants." },
+    { title: "Fraudulent Transactions", description: "Cases involving forged documents or misrepresentation of property rights in international deals." },
+    { title: "Joint Ownership Disputes", description: "Conflicts between co-owners on property use, sale, or management in different jurisdictions." }
+  ];
+
+  const ourApproach = [
+    { title: "Negotiation & Mediation", description: "We aim to resolve disputes amicably through dialogue and settlements, saving time and costs." },
+    { title: "Litigation", description: "When necessary, we represent clients in court with strong legal strategies to defend their rights." },
+    { title: "Documentation Support", description: "Assistance with drafting, reviewing, and validating legal documents to avoid future disputes." }
+  ];
+
+  const whyChooseUs = [
+    { title: "Experienced Lawyers", description: "Our team has extensive expertise in handling complex international property disputes." },
+    { title: "Client-Focused Approach", description: "We prioritize your interests and provide transparent advice at every step." },
+    { title: "Proven Track Record", description: "Successfully resolved numerous clients across domestic and commercial property matters." }
+  ];
+
   return (
     <>
       <div className="bg-primary/5">
@@ -62,6 +85,78 @@ export default function InternationalPropertyPage() {
           </div>
         </div>
       </div>
+
+      {/* Common Disputes Section */}
+      <div className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="text-center">
+            <AnimatedHeading
+              tag="h2"
+              text="Common Property Disputes We Handle"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {commonDisputes.map((item) => (
+              <Card key={item.title} className="bg-primary/5 border-primary/20">
+                <CardHeader>
+                  <CardTitle className="font-headline text-lg text-accent uppercase">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Our Approach Section */}
+      <div className="bg-primary py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4 text-center">
+          <AnimatedHeading
+            tag="h2"
+            text="Our Approach"
+            className="font-headline text-3xl font-bold text-primary-foreground justify-center"
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {ourApproach.map((item) => (
+              <Card key={item.title} className="bg-primary-foreground/10 border-accent/30 text-left">
+                <CardHeader>
+                  <CardTitle className="font-headline text-lg text-accent">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-primary-foreground/80">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4 text-center">
+          <AnimatedHeading
+            tag="h2"
+            text="Why Choose Us?"
+            className="font-headline text-3xl font-bold text-primary justify-center"
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {whyChooseUs.map((item) => (
+              <Card key={item.title} className="bg-primary/5">
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl text-primary">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
        <div className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-4xl text-center">
            <AnimatedHeading 

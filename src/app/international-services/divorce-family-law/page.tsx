@@ -1,10 +1,33 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import AnimatedHeading from '@/components/animated-heading';
-import { Users, Shield, Globe } from 'lucide-react';
+import { Users, Shield, Globe, Scale, Landmark } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function InternationalDivorcePage() {
+  const commonIssues = [
+    { title: "Jurisdiction Disputes", description: "Determining which country's laws apply to the divorce and custody proceedings." },
+    { title: "Child Custody & Relocation", description: "Addressing international child custody, visitation rights, and preventing parental abduction." },
+    { title: "Asset & Property Division", description: "Locating and dividing marital assets and properties located in different countries." },
+    { title: "Spousal & Child Support", description: "Establishing and enforcing support orders across international borders." },
+    { title: "Enforcement of Foreign Orders", description: "Registering and enforcing divorce decrees and custody orders from another country." },
+    { title: "Prenuptial Agreements", description: "Drafting and enforcing international prenuptial and postnuptial agreements." }
+  ];
+
+  const ourApproach = [
+    { title: "Strategic Legal Planning", description: "We analyze jurisdictional issues to devise a legal strategy that best protects your interests." },
+    { title: "Cross-Border Negotiation", description: "Skilled negotiation to reach amicable settlements on complex international family matters." },
+    { title: "Robust Litigation", description: "Strong representation in court when litigation is necessary to protect your rights and your children's welfare." }
+  ];
+
+  const whyChooseUs = [
+    { title: "Global Legal Network", description: "We collaborate with legal experts in other countries to provide comprehensive representation." },
+    { title: "Client-Focused Advocacy", description: "We provide personalized and compassionate legal support during challenging family transitions." },
+    { title: "Proven Track Record", description: "Successfully resolved numerous complex international divorce and family law cases." }
+  ];
+
   return (
     <>
       <div className="bg-primary/5">
@@ -62,6 +85,78 @@ export default function InternationalDivorcePage() {
           </div>
         </div>
       </div>
+
+      {/* Common Issues Section */}
+      <div className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="text-center">
+            <AnimatedHeading
+              tag="h2"
+              text="Common International Family Law Issues"
+              className="font-headline text-3xl font-bold text-primary justify-center"
+            />
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {commonIssues.map((item) => (
+              <Card key={item.title} className="bg-primary/5 border-primary/20">
+                <CardHeader>
+                  <CardTitle className="font-headline text-lg text-accent uppercase">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Our Approach Section */}
+      <div className="bg-primary py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4 text-center">
+          <AnimatedHeading
+            tag="h2"
+            text="Our Approach"
+            className="font-headline text-3xl font-bold text-primary-foreground justify-center"
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {ourApproach.map((item) => (
+              <Card key={item.title} className="bg-primary-foreground/10 border-accent/30 text-left">
+                <CardHeader>
+                  <CardTitle className="font-headline text-lg text-accent">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-primary-foreground/80">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Why Choose Us Section */}
+      <div className="py-16 lg:py-24">
+        <div className="container mx-auto max-w-7xl px-4 text-center">
+          <AnimatedHeading
+            tag="h2"
+            text="Why Choose Us?"
+            className="font-headline text-3xl font-bold text-primary justify-center"
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {whyChooseUs.map((item) => (
+              <Card key={item.title} className="bg-primary/5">
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl text-primary">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+
        <div className="bg-primary/5 py-16 lg:py-24">
         <div className="container mx-auto max-w-4xl text-center">
            <AnimatedHeading 
