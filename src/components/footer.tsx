@@ -7,6 +7,7 @@ export default function Footer() {
     { href: '/about', label: 'About Us' },
     { href: '/practice-areas', label: 'Practice Areas' },
     { href: '/case-studies',label: 'Case Studies' },
+    { href: '/international-services', label: 'International Services' },
     { href: '/appointments', label: 'Appointments' },
   ];
   const socialLinks = [
@@ -81,7 +82,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Advocate Piyush Jain & Associates. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Advocate Piyush Jain &amp; Associates. All Rights Reserved.</p>
+          <p className='drop-cap-text'>DISCLAIMER: AS PER THE RULES OF THE BAR COUNCIL OF INDIA, WE ARE NOT PERMITTED TO SOLICIT WORK AND ADVERTISE. THE USER ACKNOWLEDGES THE FOLLOWING THAT THERE HAS BEEN NO ADVERTISEMENT, PERSONAL COMMUNICATION, SOLICITATION, INVITATION OR INDUCEMENT OF ANY SORT WHATSOEVER FROM US OR ANY OF OUR MEMBERS TO SOLICIT ANY WORK THROUGH THIS WEBSITE;THE USER WISHES TO GAIN MORE INFORMATION ABOUT US FOR HIS/HER OWN INFORMATION AND USE; THE INFORMATION ABOUT US IS PROVIDED TO THE USER ONLY ON HIS/HER SPECIFIC REQUEST AND ANY INFORMATION OBTAINED OR MATERIALS DOWNLOADED FROM THIS WEBSITE IS COMPLETELY AT THE USER’S VOLITION AND ANY TRANSMISSION, RECEIPT OR USE OF THIS SITE WOULD NOT CREATE ANY LAWYER-CLIENT RELATIONSHIP. THE INFORMATION PROVIDED UNDER THIS WEBSITE IS SOLELY AVAILABLE AT YOUR REQUEST FOR INFORMATIONAL PURPOSES ONLY, SHOULD NOT BE INTERPRETED AS SOLICITING OR ADVERTISEMENT. WE ARE NOT LIABLE FOR ANY CONSEQUENCE OF ANY ACTION TAKEN BY THE USER RELYING ON MATERIAL/INFORMATION PROVIDED UNDER THIS WEBSITE. IN CASES WHERE THE USER HAS ANY LEGAL ISSUES, HE/SHE IN ALL CASES MUST SEEK INDEPENDENT LEGAL ADVICE.</p>
         </div>
       </div>
     </footer>
