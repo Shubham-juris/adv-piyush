@@ -41,8 +41,8 @@ export default function MobileNav({ navLinks }: MobileNavProps) {
           <nav className="mt-8 flex flex-1 flex-col gap-2">
             {navLinks.map((link) => (
               link.submenu ? (
-                <Collapsible key={link.href}>
-                  <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md p-2 text-lg font-medium transition-colors hover:bg-muted">
+                <Collapsible key={link.href} defaultOpen={pathname.startsWith(link.href)}>
+                  <CollapsibleTrigger className={cn("flex w-full items-center justify-between rounded-md p-2 text-lg font-medium transition-colors hover:bg-muted", pathname.startsWith(link.href) ? "bg-muted" : "")}>
                     {link.label}
                     <ChevronDown className="h-5 w-5" />
                   </CollapsibleTrigger>

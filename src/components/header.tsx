@@ -58,7 +58,7 @@ export default function Header() {
                 <DropdownMenuContent>
                   {link.submenu.map((item) => (
                     <DropdownMenuItem key={item.href} asChild>
-                      <Link href={item.href}>{item.label}</Link>
+                      <Link href={item.href} className={cn(pathname === item.href && 'bg-accent/50')}>{item.label}</Link>
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
