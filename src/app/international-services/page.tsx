@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -86,7 +87,7 @@ export default function InternationalServicesPage() {
             <Link href="/appointments">Schedule a Consultation</Link>
           </Button>
         </div>
-      </section>
+      </div>
     </>
   );
 }
