@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Gavel, Landmark, Building2, Quote, CheckCircle, Award, TrendingUp, Users } from 'lucide-react';
@@ -60,6 +61,14 @@ export default function Home() {
     {
       question: "What is your fee structure?",
       answer: "Our fee structure varies depending on the complexity and nature of the case. We offer various arrangements, including flat fees, hourly rates, and retainers. We are committed to transparency and will discuss all fee-related matters with you upfront during your initial consultation."
+    },
+    {
+      question: "Do you handle international legal matters?",
+      answer: "Yes, we have a dedicated practice for international legal services, including international adoptions, cross-border family law, and property disputes. Please visit our 'International Services' page for more detailed information on our global capabilities."
+    },
+    {
+      question: "How will I be kept updated on the progress of my case?",
+      answer: "We believe in maintaining open and regular communication with our clients. You will be assigned a primary point of contact at our firm who will provide you with regular updates. We are also available to answer your questions via phone or email."
     }
   ];
 
