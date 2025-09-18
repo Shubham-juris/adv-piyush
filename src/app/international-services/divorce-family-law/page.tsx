@@ -8,24 +8,24 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function InternationalDivorcePage() {
   const commonIssues = [
-    { title: "Jurisdiction Disputes", description: "Determining which country's laws apply to the divorce and custody proceedings." },
-    { title: "Child Custody & Relocation", description: "Addressing international child custody, visitation rights, and preventing parental abduction." },
-    { title: "Asset & Property Division", description: "Locating and dividing marital assets and properties located in different countries." },
-    { title: "Spousal & Child Support", description: "Establishing and enforcing support orders across international borders." },
-    { title: "Enforcement of Foreign Orders", description: "Registering and enforcing divorce decrees and custody orders from another country." },
-    { title: "Prenuptial Agreements", description: "Drafting and enforcing international prenuptial and postnuptial agreements." }
+    { title: "Jurisdiction Disputes", description: "Determining which country's laws and courts have the authority to hear the divorce, custody, and financial proceedings, which is often the first and most critical challenge." },
+    { title: "Child Custody & Relocation", description: "Addressing complex international child custody arrangements, visitation rights, and obtaining legal permission for relocating children across borders while preventing parental abduction." },
+    { title: "Asset & Property Division", description: "Identifying, valuing, and equitably dividing marital assets and properties that are located in different countries, each with its own property laws." },
+    { title: "Spousal & Child Support", description: "Establishing fair spousal and child support orders and ensuring they can be legally enforced across international borders through treaties and agreements." },
+    { title: "Enforcement of Foreign Orders", description: "The process of getting a divorce decree, custody order, or support order from one country legally recognized and enforced in another country." },
+    { title: "Prenuptial Agreements", description: "Drafting, interpreting, and enforcing international prenuptial and postnuptial agreements to protect assets in the event of a cross-border divorce." }
   ];
 
   const ourApproach = [
-    { title: "Strategic Legal Planning", description: "We analyze jurisdictional issues to devise a legal strategy that best protects your interests." },
-    { title: "Cross-Border Negotiation", description: "Skilled negotiation to reach amicable settlements on complex international family matters." },
-    { title: "Robust Litigation", description: "Strong representation in court when litigation is necessary to protect your rights and your children's welfare." }
+    { title: "Strategic Legal Planning", description: "We meticulously analyze jurisdictional issues and international laws to devise a comprehensive legal strategy that best protects your interests and achieves your objectives." },
+    { title: "Cross-Border Negotiation", description: "Our lawyers are skilled negotiators, adept at reaching amicable and enforceable settlements on complex international family matters, often avoiding lengthy court battles." },
+    { title: "Robust Litigation", description: "When litigation is necessary, we provide strong, assertive representation in court to protect your rights, your financial interests, and your children's welfare." }
   ];
 
   const whyChooseUs = [
-    { title: "Global Legal Network", description: "We collaborate with legal experts in other countries to provide comprehensive representation." },
-    { title: "Client-Focused Advocacy", description: "We provide personalized and compassionate legal support during challenging family transitions." },
-    { title: "Proven Track Record", description: "Successfully resolved numerous complex international divorce and family law cases." }
+    { title: "Global Legal Network", description: "We have an established network of legal experts in various countries, allowing us to provide seamless and comprehensive representation for your international case." },
+    { title: "Client-Focused Advocacy", description: "We provide personalized, responsive, and compassionate legal support, understanding the immense stress and emotional challenges of international family disputes." },
+    { title: "Proven Track Record", description: "Our firm has a history of successfully resolving numerous complex international divorce and family law cases, securing favorable outcomes for our clients." }
   ];
 
   return (
@@ -38,7 +38,7 @@ export default function InternationalDivorcePage() {
             className="font-headline text-4xl font-bold uppercase text-primary md:text-5xl justify-center"
           />
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-            Expert legal counsel for cross-border family law matters, including divorce, custody, and asset division involving multiple jurisdictions.
+            EXPERT LEGAL COUNSEL FOR CROSS-BORDER FAMILY LAW MATTERS, INCLUDING DIVORCE, CUSTODY, AND ASSET DIVISION INVOLVING MULTIPLE JURISDICTIONS.
           </p>
         </div>
       </div>
@@ -53,21 +53,21 @@ export default function InternationalDivorcePage() {
                 className="font-headline text-3xl font-bold uppercase text-primary"
               />
               <p className="mt-6 text-lg text-muted-foreground">
-                Family law cases that span multiple countries present unique challenges, from determining jurisdiction to enforcing court orders abroad. Our firm is equipped to handle the intricate legal landscape of international family law.
+                Family law cases that span multiple countries present unique challenges, from determining jurisdiction to enforcing court orders abroad. Our firm is equipped with the specialized knowledge and international network to handle the intricate legal landscape of international family law.
               </p>
               <div className="mt-8 space-y-6">
                  <div className="flex items-start gap-4">
                    <Globe className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                    <div>
-                     <h3 className="text-xl font-bold uppercase text-foreground">Jurisdictional Analysis</h3>
-                     <p className='text-muted-foreground'>We provide critical analysis to determine the most advantageous jurisdiction for your case and handle legal proceedings in coordination with foreign counsel.</p>
+                     <h3 className="text-xl font-bold uppercase text-foreground">JURISDICTIONAL ANALYSIS</h3>
+                     <p className='text-muted-foreground'>WE PROVIDE CRITICAL ANALYSIS TO DETERMINE THE MOST ADVANTAGEOUS JURISDICTION FOR YOUR CASE AND HANDLE LEGAL PROCEEDINGS IN COORDINATION WITH FOREIGN COUNSEL.</p>
                    </div>
                  </div>
                  <div className="flex items-start gap-4">
                    <Users className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                    <div>
-                     <h3 className="text-xl font-bold uppercase text-foreground">Child Custody & Support</h3>
-                     <p className='text-muted-foreground'>Protecting the best interests of children in international custody disputes, including matters related to the Hague Convention on Child Abduction.</p>
+                     <h3 className="text-xl font-bold uppercase text-foreground">CHILD CUSTODY & SUPPORT</h3>
+                     <p className='text-muted-foreground'>PROTECTING THE BEST INTERESTS OF CHILDREN IN INTERNATIONAL CUSTODY DISPUTES, INCLUDING MATTERS RELATED TO THE HAGUE CONVENTION ON CHILD ABDUCTION.</p>
                    </div>
                  </div>
               </div>

@@ -8,24 +8,24 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function InternationalAdoptionsPage() {
   const processSteps = [
-    { title: "Home Study & Dossier", description: "Comprehensive evaluation and document preparation for submission to the foreign country." },
-    { title: "Child Referral", description: "Accepting a match with a child from the foreign adoption authority." },
-    { title: "Immigration & Visa", description: "Navigating U.S. immigration processes to bring your child home." },
-    { title: "Travel & Court Process", description: "Traveling to the child's country to finalize the adoption in their legal system." },
-    { title: "Post-Adoption Finalization", description: "Finalizing the adoption in U.S. courts and completing post-placement reporting." },
-    { title: "Citizenship", description: "Ensuring your child automatically acquires U.S. citizenship upon entry." }
+    { title: "Home Study & Dossier", description: "Comprehensive evaluation of the prospective adoptive parents' home environment and compilation of all necessary legal documents for submission to the foreign country's adoption authority." },
+    { title: "Child Referral", description: "The foreign adoption authority proposes a match with a child. We help you review the referral and make an informed decision on accepting the match." },
+    { title: "Immigration & Visa", description: "Navigating the complex U.S. immigration processes, including filing petitions with USCIS to obtain the necessary visa for your child to enter the United States." },
+    { title: "Travel & Court Process", description: "Traveling to the child's country of origin to meet them and finalize the adoption in their local legal system, a process we guide you through." },
+    { title: "Post-Adoption Finalization", description: "Upon returning to the U.S., we assist with finalizing the adoption in local courts and completing all required post-placement reporting for the foreign country." },
+    { title: "Citizenship", description: "Ensuring your child automatically acquires U.S. citizenship upon their entry into the country, securing their legal status as a member of your family." }
   ];
 
   const ourApproach = [
-    { title: "Compassionate Guidance", description: "We provide empathetic support, understanding the emotional journey of adoption." },
-    { title: "Legal Expertise", description: "Deep knowledge of the Hague Convention and inter-country adoption laws." },
-    { title: "Seamless Coordination", description: "We work with international agencies to ensure a smooth and compliant process." }
+    { title: "Compassionate Guidance", description: "We understand that adoption is a deeply emotional journey. Our team provides empathetic and supportive legal counsel every step of the way." },
+    { title: "Legal Expertise", description: "We have a deep and up-to-date knowledge of the Hague Convention on Intercountry Adoption and the specific adoption laws of various countries." },
+    { title: "Seamless Coordination", description: "We work closely with international adoption agencies, foreign attorneys, and government bodies to ensure a smooth, compliant, and efficient process." }
   ];
 
   const whyChooseUs = [
-    { title: "Experienced Counsel", description: "Our team has extensive experience in successfully handling complex international adoptions." },
-    { title: "Child-Focused", description: "We prioritize the best interests and welfare of the child at every step." },
-    { title: "Proven Success", description: "We have a strong track record of uniting families across borders." }
+    { title: "Experienced Counsel", description: "Our legal team has extensive, hands-on experience in successfully navigating the complexities of international adoptions from a wide range of countries." },
+    { title: "Child-Focused", description: "In every action we take, we prioritize the best interests, welfare, and legal rights of the child, ensuring an ethical and responsible adoption process." },
+    { title: "Proven Success", description: "We have a strong and verifiable track record of uniting families across borders, overcoming legal hurdles, and bringing children home to their loving families." }
   ];
 
   return (
@@ -38,7 +38,7 @@ export default function InternationalAdoptionsPage() {
             className="font-headline text-4xl font-bold uppercase text-primary md:text-5xl justify-center"
           />
           <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-            Navigating the complexities of inter-country adoption with legal expertise and compassionate guidance to unite families across borders.
+            NAVIGATING THE COMPLEXITIES OF INTER-COUNTRY ADOPTION WITH LEGAL EXPERTISE AND COMPASSIONATE GUIDANCE TO UNITE FAMILIES ACROSS BORDERS.
           </p>
         </div>
       </div>
@@ -53,21 +53,21 @@ export default function InternationalAdoptionsPage() {
                 className="font-headline text-3xl font-bold uppercase text-primary"
               />
               <p className="mt-6 text-lg text-muted-foreground">
-                International adoption is a beautiful way to build a family, but it involves navigating the legal systems of two different countries. Our firm provides comprehensive legal support to ensure a smooth and legally sound adoption process.
+                International adoption is a beautiful way to build a family, but it involves navigating the legal systems of two different countries. Our firm provides comprehensive legal support to ensure a smooth and legally sound adoption process, from initial paperwork to final citizenship.
               </p>
               <div className="mt-8 space-y-6">
                  <div className="flex items-start gap-4">
                    <Heart className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                    <div>
-                     <h3 className="text-xl font-bold uppercase text-foreground">Hague Convention Expertise</h3>
-                     <p className='text-muted-foreground'>We specialize in adoptions under the Hague Convention, ensuring all international standards and safeguards are met for the protection of the child.</p>
+                     <h3 className="text-xl font-bold uppercase text-foreground">HAGUE CONVENTION EXPERTISE</h3>
+                     <p className='text-muted-foreground'>WE SPECIALIZE IN ADOPTIONS UNDER THE HAGUE CONVENTION, ENSURING ALL INTERNATIONAL STANDARDS AND SAFEGUARDS ARE MET FOR THE PROTECTION OF THE CHILD.</p>
                    </div>
                  </div>
                  <div className="flex items-start gap-4">
                    <Scale className="h-8 w-8 text-accent flex-shrink-0 mt-1" />
                    <div>
-                     <h3 className="text-xl font-bold uppercase text-foreground">Complete Legal Guidance</h3>
-                     <p className='text-muted-foreground'>From compiling the dossier and fulfilling home country requirements to navigating immigration and post-adoption finalization, we guide you at every step.</p>
+                     <h3 className="text-xl font-bold uppercase text-foreground">COMPLETE LEGAL GUIDANCE</h3>
+                     <p className='text-muted-foreground'>FROM COMPILING THE DOSSIER AND FULFILLING HOME COUNTRY REQUIREMENTS TO NAVIGATING IMMIGRATION AND POST-ADOPTION FINALIZATION, WE GUIDE YOU AT EVERY STEP.</p>
                    </div>
                  </div>
               </div>
