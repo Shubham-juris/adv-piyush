@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin,Facebook,Instagram } from 'lucide-react';
 import Logo from './logo';
 
 export default function Footer() {
@@ -11,9 +11,13 @@ export default function Footer() {
     { href: '/appointments', label: 'Appointments' },
   ];
   const socialLinks = [
-    { icon: <Twitter className="h-5 w-5" />, href: '#' },
-    { icon: <Linkedin className="h-5 w-5" />, href: '#' },
-    { icon: <Facebook className="h-5 w-5" />, href: '#' },
+{ 
+    icon: <Facebook className="h-5 w-5" />, 
+    href: "https://www.facebook.com/profile.php?id=61571613130689" 
+  },  { 
+    icon: <Instagram className="h-5 w-5" />, 
+    href: "https://www.instagram.com/piyush_jain_associates/" 
+  },
   ];
 
   return (
